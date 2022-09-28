@@ -1,0 +1,27 @@
+---
+const featuresData = [
+    {title:'zero javascript runtime',
+    body:'this is a paragraph about the same.'},
+
+    {title:'astro project',
+    body:'this is a paragraph about the same.'},
+
+    {title:'we will shine, god is with us',
+    body:'this is a paragraph about the same.'}
+];
+
+---
+
+<section class="features">
+
+    <div class="container">
+        {featuresData.map(feature =>(
+            <div class="card">
+            <h3>{feature.title}</h3>
+            <p>{feature.body}</p>
+        </div>
+
+        ))}
+    </div>
+
+</section>
